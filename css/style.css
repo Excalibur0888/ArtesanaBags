@@ -799,6 +799,87 @@ main {
     background: var(--color-light);
 }
 
+/* Timeline styles */
+.process__timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.process__timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: var(--color-primary);
+    transform: translateX(-50%);
+}
+
+.process__step {
+    position: relative;
+    width: calc(50% - 30px);
+    margin: 50px 0;
+    padding: 30px;
+    background: var(--color-bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.process__step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.process__step:nth-child(odd) {
+    margin-left: auto;
+}
+
+.process__step::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    width: 30px;
+    height: 2px;
+    background: var(--color-primary);
+}
+
+.process__step:nth-child(odd)::before {
+    left: -30px;
+}
+
+.process__step:nth-child(even)::before {
+    right: -30px;
+}
+
+.process__number {
+    position: absolute;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary);
+    color: var(--color-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+.process__step:nth-child(odd) .process__number {
+    left: -50px;
+}
+
+.process__step:nth-child(even) .process__number {
+    right: -50px;
+}
+
+/* Grid styles for about page */
 .process__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -820,6 +901,7 @@ main {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
+/* Shared styles */
 .process__icon {
     width: 60px;
     height: 60px;
@@ -830,7 +912,8 @@ main {
     transition: var(--transition);
 }
 
-.process__item:hover .process__icon {
+.process__item:hover .process__icon,
+.process__step:hover .process__icon {
     transform: scale(1.1) rotate(-10deg);
 }
 
@@ -877,6 +960,24 @@ main {
     .process__grid {
         grid-template-columns: 1fr;
     }
+
+    .process__timeline::before {
+        left: 20px;
+    }
+
+    .process__step {
+        width: calc(100% - 50px);
+        margin-left: 50px !important;
+    }
+
+    .process__step::before {
+        left: -30px !important;
+        width: 30px;
+    }
+
+    .process__number {
+        left: -50px !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -884,7 +985,8 @@ main {
         padding: 60px 0;
     }
 
-    .process__item {
+    .process__item,
+    .process__step {
         padding: 30px;
     }
 
