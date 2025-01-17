@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtesanaBags - Bolsas Artesanais</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="ArtesanaBags">
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link nav__link--active">Início</a></li>
+                    <li><a href="products.html" class="nav__link">Produtos</a></li>
+                    <li><a href="about.html" class="nav__link">Sobre</a></li>
+                </ul>
+                <a href="contact.html" class="nav__contact">
+                    <img src="img/icons/bag.svg" alt="" width="24" height="24">
+                    Faça seu pedido
+                </a>
+            </nav>
+            <button class="burger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1>Bolsas artesanais feitas com amor e dedicação</h1>
+                    <p>Descubra nossa coleção exclusiva de bolsas e acessórios feitos à mão, combinando tradição artesanal com design contemporâneo.</p>
+                    <div class="hero__buttons">
+                        <a href="products.html" class="btn">Ver produtos</a>
+                        <a href="about.html" class="btn btn--outline">Nossa história</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <div class="hero__image-wrapper">
+                        <img src="img/hero.jpg" alt="Bolsas artesanais">
+                    </div>
+                    <div class="hero__pattern"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Por que escolher nossas bolsas?</h2>
+                    <p>Cada peça é única e feita com materiais selecionados, garantindo qualidade e exclusividade.</p>
+                </div>
+                <div class="features__circle">
+                    <div class="features__item" style="--i:0">
+                        <img src="img/icons/quality.svg" alt="" class="features__icon">
+                        <h3>Artesanal</h3>
+                        <p>Cada peça é cuidadosamente feita à mão, garantindo atenção aos detalhes.</p>
+                        <div class="features__details">
+                            <ul>
+                                <li>Costura manual precisa</li>
+                                <li>Acabamento personalizado</li>
+                                <li>Detalhes únicos</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="features__item" style="--i:1">
+                        <img src="img/icons/process.svg" alt="" class="features__icon">
+                        <h3>Alta qualidade</h3>
+                        <p>Utilizamos apenas materiais premium e técnicas tradicionais.</p>
+                        <div class="features__details">
+                            <ul>
+                                <li>Couro selecionado</li>
+                                <li>Ferragens premium</li>
+                                <li>Durabilidade garantida</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="features__item" style="--i:2">
+                        <img src="img/icons/workshop.svg" alt="" class="features__icon">
+                        <h3>Design exclusivo</h3>
+                        <p>Criamos designs únicos que combinam estilo e tradição.</p>
+                        <div class="features__details">
+                            <ul>
+                                <li>Modelos exclusivos</li>
+                                <li>Personalização disponível</li>
+                                <li>Tendências atuais</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="features__background">
+                    <div class="features__pattern"></div>
+                    <div class="features__highlight"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="customize">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Visualize cada detalhe</h2>
+                    <p>Deslize para explorar todos os ângulos de nossas bolsas</p>
+                </div>
+                <div class="customize__container">
+                    <div class="customize__preview">
+                        <div class="customize__slider">
+                            <button class="customize__prev" aria-label="Anterior">‹</button>
+                            <div class="customize__bag">
+                                <img src="img/bag-base.jpg" alt="Bolsa artesanal" class="customize__image active">
+                                <img src="img/bag-leather.jpg" alt="Bolsa artesanal" class="customize__image">
+                                <img src="img/bag-luxury.jpg" alt="Bolsa artesanal" class="customize__image">
+                            </div>
+                            <button class="customize__next" aria-label="Próximo">›</button>
+                        </div>
+                        <div class="customize__zoom">
+                            <button class="customize__zoom-in" aria-label="Aumentar zoom">+</button>
+                            <button class="customize__zoom-out" aria-label="Diminuir zoom">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nossos produtos em destaque</h2>
+                    <p>Conheça algumas de nossas criações mais populares</p>
+                </div>
+                <div class="products__showcase">
+                    <article class="product">
+                        <div class="product__image">
+                            <img src="img/bag1.jpg" alt="Bolsa artesanal">
+                        </div>
+                        <div class="product__content">
+                            <h3>Bolsa Artesanal Classic</h3>
+                            <p>Bolsa feita em couro natural com acabamento premium</p>
+                            <a href="produtos/bolsa-classic.html" class="btn">Saiba mais</a>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product__image">
+                            <img src="img/bag2.jpg" alt="Bolsa artesanal">
+                        </div>
+                        <div class="product__content">
+                            <h3>Bolsa Artesanal Modern</h3>
+                            <p>Design moderno com detalhes artesanais únicos</p>
+                            <a href="produtos/bolsa-modern.html" class="btn">Saiba mais</a>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product__image">
+                            <img src="img/bag3.jpg" alt="Bolsa artesanal">
+                        </div>
+                        <div class="product__content">
+                            <h3>Bolsa Artesanal Vintage</h3>
+                            <p>Inspirada em designs clássicos com toque contemporâneo</p>
+                            <a href="produtos/bolsa-vintage.html" class="btn">Saiba mais</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="process">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nosso processo artesanal</h2>
+                    <p>Conheça as etapas de criação de nossas bolsas</p>
+                </div>
+                <div class="process__timeline">
+                    <div class="process__step">
+                        <div class="process__number">1</div>
+                        <h3>Seleção do material</h3>
+                        <p>Escolhemos cuidadosamente cada material</p>
+                    </div>
+                    <div class="process__step">
+                        <div class="process__number">2</div>
+                        <h3>Design</h3>
+                        <p>Criamos designs exclusivos</p>
+                    </div>
+                    <div class="process__step">
+                        <div class="process__number">3</div>
+                        <h3>Corte</h3>
+                        <p>Cortamos com precisão</p>
+                    </div>
+                    <div class="process__step">
+                        <div class="process__number">4</div>
+                        <h3>Costura</h3>
+                        <p>Costuramos à mão</p>
+                    </div>
+                    <div class="process__step">
+                        <div class="process__number">5</div>
+                        <h3>Acabamento</h3>
+                        <p>Finalizamos com cuidado</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__info">
+                    <img src="img/logo-white.svg" alt="ArtesanaBags" class="footer__logo" width="180" height="40">
+                    <p>Criamos bolsas e acessórios artesanais únicos, combinando tradição e inovação em cada peça.</p>
+                </div>
+                <nav class="footer__nav">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="products.html">Produtos</a></li>
+                        <li><a href="about.html">Sobre</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>
+                            <img src="img/icons/location.svg" alt="" width="24" height="24">
+                            <a href="https://maps.app.goo.gl/M18SwfhKeHUBPV9j9" target="_blank">
+															R. Conselheiro Ramalho, 76 - Bela Vista, São Paulo - SP, Brazil
+                            </a>
+                        </li>
+                        <li>
+                            <img src="img/icons/phone.svg" alt="" width="24" height="24">
+                            <a href="tel:+5511987654321">+55 (11) 98765-4321</a>
+                        </li>
+                        <li>
+                            <img src="img/icons/email.svg" alt="" width="24" height="24">
+                            <a href="mailto:contato@artesanabags.com.br">contato@artesanabags.com.br</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 ArtesanaBags. Todos os direitos reservados.</p>
+                <div class="footer__legal">
+                    <a href="privacy-policy.html">Política de Privacidade</a>
+                    <a href="terms-conditions.html">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Круг -->
+    <g transform="translate(-5, 0)">
+        <path d="M20 15C15.5817 15 12 18.5817 12 23C12 27.4183 15.5817 31 20 31C24.4183 31 28 27.4183 28 23C28 18.5817 24.4183 15 20 15ZM20 29C16.6863 29 14 26.3137 14 23C14 19.6863 16.6863 17 20 17C23.3137 17 26 19.6863 26 23C26 26.3137 23.3137 29 20 29Z" fill="#FFFFFF"/>
+        <path d="M20 19C17.7909 19 16 20.7909 16 23C16 25.2091 17.7909 27 20 27C22.2091 27 24 25.2091 24 23C24 20.7909 22.2091 19 20 19Z" fill="#FFFFFF"/>
+    </g>
+    
+    <!-- Текст ArtesanaBags -->
+    <text x="30" y="30" font-family="Arial" font-weight="bold" font-size="24" fill="#FFFFFF">ArtesanaBags</text>
+</svg> 

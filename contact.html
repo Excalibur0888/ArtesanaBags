@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - ArtesanaBags | Fale Conosco</title>
+    <meta
+      name="description"
+      content="Entre em contato com a ArtesanaBags. Estamos prontos para atender suas dúvidas sobre nossas bolsas e acessórios artesanais em couro."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="img/logo.svg" alt="ArtesanaBags" />
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Início</a></li>
+            <li><a href="products.html" class="nav__link">Produtos</a></li>
+            <li><a href="about.html" class="nav__link">Sobre</a></li>
+          </ul>
+          <a href="contact.html" class="nav__contact nav__contact--mobile nav__link--active">
+            <img src="img/icons/bag.svg" alt="" width="24" height="24" />
+            Faça seu pedido
+          </a>
+        </nav>
+        <button class="burger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero--contact">
+        <div class="container">
+          <h1>Fale Conosco</h1>
+          <p>Estamos aqui para ajudar você a encontrar a bolsa perfeita</p>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <div class="contact__grid">
+            <div class="contact__info">
+              <div class="contact__card">
+                <div class="contact__icon">
+                  <img
+                    src="img/icons/location.svg"
+                    alt="Ícone de localização"
+                    width="24"
+                    height="24"
+                  />
+                </div>
+                <h3>Nosso Ateliê</h3>
+                <a
+                  href="https://maps.app.goo.gl/M18SwfhKeHUBPV9j9"
+                  target="_blank"
+                  class="contact__link"
+                >
+                  R. Conselheiro Ramalho, 76 - Bela Vista, São Paulo - SP,
+                  Brazil
+                </a>
+              </div>
+              <div class="contact__card">
+                <div class="contact__icon">
+                  <img
+                    src="img/icons/phone.svg"
+                    alt="Ícone de telefone"
+                    width="24"
+                    height="24"
+                  />
+                </div>
+                <h3>Telefone</h3>
+                <a href="tel:+5511912345678" class="contact__link"
+                  >+55 (11) 91234-5678</a
+                >
+                <p>Atendimento via WhatsApp</p>
+              </div>
+              <div class="contact__card">
+                <div class="contact__icon">
+                  <img
+                    src="img/icons/email.svg"
+                    alt="Ícone de email"
+                    width="24"
+                    height="24"
+                  />
+                </div>
+                <h3>E-mail</h3>
+                <a href="mailto:artesanabags@gmail.com" class="contact__link"
+                  >artesanabags@gmail.com</a
+                >
+                <p>Resposta em até 24 horas</p>
+              </div>
+              <div class="contact__hours">
+                <div class="contact__icon">
+                  <img
+                    src="img/icons/clock.svg"
+                    alt="Ícone de horário"
+                    width="24"
+                    height="24"
+                  />
+                </div>
+                <h3>Horário de Atendimento</h3>
+                <ul>
+                  <li>
+                    <span>Segunda a Sexta</span>
+                    <span>09:00 - 18:00</span>
+                  </li>
+                  <li>
+                    <span>Sábado</span>
+                    <span>09:00 - 13:00</span>
+                  </li>
+                  <li>
+                    <span>Domingo</span>
+                    <span>Fechado</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="contact__form">
+              <h2>Envie sua Mensagem</h2>
+              <p>
+                Tem alguma dúvida ou gostaria de fazer um pedido personalizado?
+                Entre em contato conosco!
+              </p>
+              <form action="thanks_form.php" method="POST">
+                <div class="form__group">
+                  <label for="name">Nome Completo</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form__group">
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form__group">
+                  <label for="subject">Assunto</label>
+                  <select id="subject" name="subject" required>
+                    <option value="">Selecione um assunto</option>
+                    <option value="pedido">Fazer um Pedido</option>
+                    <option value="orcamento">Solicitar Orçamento</option>
+                    <option value="duvida">Dúvida sobre Produtos</option>
+                    <option value="outro">Outro Assunto</option>
+                  </select>
+                </div>
+                <div class="form__group">
+                  <label for="message">Mensagem</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <div class="form__group form__group--checkbox">
+                  <input
+                    type="checkbox"
+                    id="privacy"
+                    name="privacy"
+                    value="on"
+                    required
+                  />
+                  <label for="privacy"
+                    >Aceito a
+                    <a href="privacy-policy.html"
+                      >Política de Privacidade</a
+                    ></label
+                  >
+                </div>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="container">
+          <div class="map__content">
+            <div class="map__info">
+              <h2>Nossa Localização</h2>
+              <p>
+                Nosso ateliê está localizado em uma região de fácil acesso no
+                coração de São Paulo. Venha nos visitar!
+              </p>
+              <div class="map__address">
+                <img
+                  src="img/icons/location.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+                />
+                <div>
+                  R. Conselheiro Ramalho, 76 - Bela Vista, São Paulo - SP,
+                  Brazil
+                </div>
+              </div>
+              <a
+                href="https://maps.app.goo.gl/M18SwfhKeHUBPV9j9"
+                target="_blank"
+                class="btn"
+                >Como Chegar</a
+              >
+            </div>
+            <div class="map__frame">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1074.0195079154623!2d-46.64515711878541!3d-23.552705771375365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59b3486b82e9%3A0x6381ff69066db523!2zUi4gQ29uc2VsaGVpcm8gUmFtYWxobywgNzYgLSBCZWxhIFZpc3RhLCBTw6NvIFBhdWxvIC0gU1AsINCR0YDQsNC30LjQu9C40Y8!5e1!3m2!1sru!2sus!4v1737121107742!5m2!1sru!2sus"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__info">
+            <img
+              src="img/logo-white.svg"
+              alt="ArtesanaBags"
+              class="footer__logo"
+              width="180"
+              height="40"
+            />
+            <p>
+              Criamos bolsas e acessórios artesanais únicos, combinando tradição
+              e inovação em cada peça.
+            </p>
+          </div>
+          <nav class="footer__nav">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="products.html">Produtos</a></li>
+              <li><a href="about.html">Sobre</a></li>
+              <li><a href="contact.html">Contato</a></li>
+            </ul>
+          </nav>
+          <div class="footer__contact">
+            <h4>Contato</h4>
+            <ul>
+              <li>
+                <img
+                  src="img/icons/location.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+                />
+                <a
+                  href="https://maps.app.goo.gl/M18SwfhKeHUBPV9j9"
+                  target="_blank"
+                >
+                  R. Conselheiro Ramalho, 76 - Bela Vista, São Paulo - SP,
+                  Brazil
+                </a>
+              </li>
+              <li>
+                <img src="img/icons/phone.svg" alt="" width="24" height="24" />
+                <a href="tel:+5511912345678">+55 (11) 91234-5678</a>
+              </li>
+              <li>
+                <img src="img/icons/email.svg" alt="" width="24" height="24" />
+                <a href="mailto:artesanabags@gmail.com"
+                  >artesanabags@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2024 ArtesanaBags. Todos os direitos reservados.</p>
+          <div class="footer__legal">
+            <a href="privacy-policy.html">Política de Privacidade</a>
+            <a href="terms-conditions.html">Termos de Uso</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
