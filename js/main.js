@@ -212,7 +212,7 @@ function showSuccessMessage(form) {
 
 // Lazy loading images
 document.addEventListener('DOMContentLoaded', () => {
-    const lazyImages = document.querySelectorAll('img[]');
+    const lazyImages = document.querySelectorAll('img[data-src]');
     
     if ('loading' in HTMLImageElement.prototype) {
         // Browser supports native lazy loading
@@ -298,3 +298,180 @@ const customize = {
 document.addEventListener('DOMContentLoaded', () => {
     customize.init();
 });
+
+// Team Filters
+const teamFilters = document.querySelectorAll('.team-filter');
+const teamMembers = document.querySelectorAll('.team-member');
+
+teamFilters.forEach(filter => {
+    filter.addEventListener('click', () => {
+        // Remove active class from all filters
+        teamFilters.forEach(f => f.classList.remove('active'));
+        // Add active class to clicked filter
+        filter.classList.add('active');
+
+        const category = filter.dataset.filter;
+
+        teamMembers.forEach(member => {
+            // First, remove the hidden class and reset styles
+            member.classList.remove('hidden');
+            member.style.display = '';
+
+            // If not "all" and doesn't match category, hide it
+            if (category !== 'all' && member.dataset.category !== category) {
+                member.classList.add('hidden');
+                // Use setTimeout to ensure smooth transition
+                setTimeout(() => {
+                    member.style.display = 'none';
+                }, 300);
+            }
+        });
+    });
+});
+
+// Team Modal
+const modal = document.querySelector('.team-modal');
+
+// Only initialize modal functionality if it exists on the page
+if (modal) {
+    const modalContent = modal.querySelector('.team-modal__content');
+    const modalClose = modal.querySelector('.team-modal__close');
+    const modalImage = modal.querySelector('.team-modal__image img');
+    const modalName = modal.querySelector('.team-modal__info h3');
+    const modalRole = modal.querySelector('.team-modal__role');
+    const modalDescription = modal.querySelector('.team-modal__description');
+    const modalSkills = modal.querySelector('.team-modal__skills ul');
+    const teamMemberButtons = document.querySelectorAll('.team-member__more');
+
+    // Open modal function
+    function openModal(member) {
+        const image = member.querySelector('.team-member__image img');
+        const name = member.querySelector('h3');
+        const role = member.querySelector('.team-member__role');
+        const description = member.querySelector('.team-member__description');
+        const skills = member.querySelectorAll('.team-member__skills li');
+
+        modalImage.src = image.src;
+        modalImage.alt = image.alt;
+        modalName.textContent = name.textContent;
+        modalRole.textContent = role.textContent;
+        modalDescription.textContent = description.textContent;
+
+        // Clear and populate skills
+        modalSkills.innerHTML = '';
+        skills.forEach(skill => {
+            const li = document.createElement('li');
+            li.textContent = skill.textContent;
+            modalSkills.appendChild(li);
+        });
+
+        // Show modal with animation
+        modal.style.display = 'flex';
+        setTimeout(() => {
+            modal.classList.add('active');
+            modalContent.style.opacity = '1';
+            modalContent.style.transform = 'translateY(0)';
+        }, 10);
+
+        // Prevent body scroll
+        document.body.classList.add('no-scroll');
+    }
+
+    // Close modal function
+    function closeModal() {
+        modalContent.style.opacity = '0';
+        modalContent.style.transform = 'translateY(20px)';
+        modal.classList.remove('active');
+        
+        setTimeout(() => {
+            modal.style.display = 'none';
+            document.body.classList.remove('no-scroll');
+        }, 300);
+    }
+
+    // Event listeners for modal
+    teamMemberButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const member = button.closest('.team-member');
+            openModal(member);
+        });
+    });
+
+    modalClose.addEventListener('click', closeModal);
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Close modal on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
+}
+
+// Workshop Gallery
+const workshopImages = document.querySelectorAll('.workshop__image');
+
+workshopImages.forEach(image => {
+    image.addEventListener('mouseenter', () => {
+        const overlay = image.querySelector('.workshop__overlay');
+        if (overlay) {
+            overlay.style.transform = 'translateY(0)';
+        }
+    });
+    
+    image.addEventListener('mouseleave', () => {
+        const overlay = image.querySelector('.workshop__overlay');
+        if (overlay) {
+            overlay.style.transform = 'translateY(100%)';
+        }
+    });
+});
+
+// Функция анимации чисел
+function animateNumbers() {
+    const stats = document.querySelectorAll('.team-stat__number');
+    
+    if (!stats.length) return;
+
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = entry.target;
+                const finalNumber = parseInt(target.getAttribute('data-number'));
+                const duration = 2000; // 2 секунды
+                const start = 0;
+                const increment = finalNumber / (duration / 16); // 60 FPS
+                
+                let currentNumber = start;
+                const updateNumber = () => {
+                    currentNumber += increment;
+                    if (currentNumber < finalNumber) {
+                        target.textContent = Math.round(currentNumber);
+                        requestAnimationFrame(updateNumber);
+                    } else {
+                        target.textContent = finalNumber;
+                    }
+                };
+                
+                requestAnimationFrame(updateNumber);
+                observer.unobserve(target);
+            }
+        });
+    }, options);
+
+    stats.forEach(stat => observer.observe(stat));
+}
+
+// Вызываем функцию после загрузки страницы
+document.addEventListener('DOMContentLoaded', animateNumbers);

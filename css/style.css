@@ -242,6 +242,7 @@ main {
 }
 
 .hero__content {
+    text-align: center;
     max-width: 600px;
 }
 
@@ -250,12 +251,59 @@ main {
     line-height: 1.2;
     margin-bottom: 30px;
     color: var(--color-text);
+    animation: slideUp 1s ease-out 0.2s both;
 }
 
 .hero p {
     font-size: 1.25rem;
     color: var(--color-text-light);
     margin-bottom: 40px;
+    animation: slideUp 1s ease-out 0.4s both;
+}
+
+.hero__buttons {
+    animation: slideUp 1s ease-out 0.6s both;
+}
+
+/* Hero Variants */
+.hero--about,
+.hero--products,
+.hero--contact,
+.hero--team {
+    text-align: center;
+}
+
+.hero--about .hero__content,
+.hero--products .hero__content,
+.hero--contact .hero__content,
+.hero--team .hero__content {
+    margin: 0 auto;
+}
+
+.hero--about h1,
+.hero--products h1,
+.hero--contact h1,
+.hero--team h1 {
+    animation: slideUp 1s ease-out 0.2s both;
+}
+
+.hero--about p,
+.hero--products p,
+.hero--contact p,
+.hero--team p {
+    animation: slideUp 1s ease-out 0.4s both;
+}
+
+/* Hero Animations */
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .hero__image {
@@ -1009,6 +1057,7 @@ main {
     background-size: 20px 20px;
     background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
     opacity: 0.1;
+    animation: fadeIn 1.5s ease-out;
 }
 
 .hero__image-wrapper {
@@ -1853,6 +1902,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+    margin-bottom: 50px;
 }
 
 .team__member {
@@ -1904,6 +1954,16 @@ main {
 .team__info p:first-of-type {
     color: var(--color-primary);
     font-weight: 500;
+}
+
+.team__cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.team__cta .btn {
+    font-size: 1.1rem;
+    padding: 15px 40px;
 }
 
 @media (max-width: 1200px) {
@@ -2148,7 +2208,8 @@ main {
     gap: 15px;
     margin: 30px 0;
     padding: 20px;
-    background-color: #fff;
+		color: #fff;
+    background-color: var(--color-primary);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -2857,7 +2918,7 @@ main {
     position: relative;
     background: var(--color-bg);
     text-align: center;
-    padding: 180px 0 120px;
+    padding: 120px 0;
     margin-bottom: 60px;
 }
 
@@ -2904,4 +2965,67 @@ main {
     .hero--about p {
         font-size: 1.1rem;
     }
-} 
+}
+
+/* Hero Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.team-stat__number {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+    display: block;
+    line-height: 1;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.team-stat__label {
+    font-size: 1rem;
+    color: var(--color-text);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out 0.2s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos - ArtesanaBags | Bolsas e Acessórios Artesanais</title>
-    <meta name="description" content="Explore nossa coleção de bolsas e acessórios artesanais em couro. Cada peça é única, feita à mão com materiais de alta qualidade.">
+    <title>Ürünler - ArtesanaBags</title>
+    <meta name="description" content="El yapımı deri çanta ve aksesuar koleksiyonumuzu keşfedin. Her parça benzersizdir ve yüksek kaliteli malzemelerle elle yapılmıştır.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 </head>
@@ -16,16 +16,17 @@
             </a>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li><a href="index.html" class="nav__link">Início</a></li>
-                    <li><a href="products.html" class="nav__link nav__link--active">Produtos</a></li>
-                    <li><a href="about.html" class="nav__link">Sobre</a></li>
+                    <li><a href="index.html" class="nav__link">Ana Sayfa</a></li>
+                    <li><a href="products.html" class="nav__link nav__link--active">Ürünler</a></li>
+                    <li><a href="about.html" class="nav__link">Hakkımızda</a></li>
+                    <li><a href="team.html" class="nav__link">Ekibimiz</a></li>
                 </ul>
                 <a href="contact.html" class="nav__contact nav__contact--mobile">
-                    <img src="img/icons/bag.svg" alt="" width="24" height="24">
-                    Faça seu pedido
+                    <img src="img/icons/bag.svg" alt="Icon" width="24" height="24">
+                    Sipariş Ver
                 </a>
             </nav>
-            <button class="burger" aria-label="Menu">
+            <button class="burger" aria-label="Menü">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -36,241 +37,244 @@
     <main>
         <section class="hero hero--products">
             <div class="container">
-                <h1>Nossa Coleção</h1>
-                <p>Descubra peças únicas feitas à mão</p>
+                <div class="hero__content">
+                    <h1>Koleksiyonumuz</h1>
+                    <p>Elle yapılan benzersiz parçaları keşfedin</p>
+                </div>
             </div>
+            <div class="hero__pattern"></div>
         </section>
 
         <section class="categories">
             <div class="container">
                 <div class="section-header">
-                    <h2>Nossas Categorias</h2>
-                    <p>Explore nossa coleção exclusiva de produtos artesanais</p>
+                    <h2>Kategorilerimiz</h2>
+                    <p>Özel el yapımı ürün koleksiyonumuzu keşfedin</p>
                 </div>
                 <div class="categories__grid">
-                    <a href="#bolsas" class="category">
+                    <a href="#cantalar" class="category">
                         <div class="category__image">
-                            <img src="img/bags.jpg" alt="Bolsas artesanais" width="300" height="200">
+                            <img src="img/bags.jpg" alt="El yapımı çantalar" width="300" height="200">
                         </div>
                         <div class="category__content">
-                            <h3>Bolsas</h3>
-                            <p>Bolsas artesanais em couro legítimo com designs exclusivos</p>
-                            <span class="category__link">Ver coleção</span>
+                            <h3>Çantalar</h3>
+                            <p>Özel tasarımlı hakiki deriden el yapımı çantalar</p>
+                            <span class="category__link">Koleksiyonu Gör</span>
                         </div>
                     </a>
-                    <a href="#carteiras" class="category">
+                    <a href="#cuzdanlar" class="category">
                         <div class="category__image">
-                            <img src="img/wallets.jpg" alt="Carteiras em couro" width="300" height="200">
+                            <img src="img/wallets.jpg" alt="Deri cüzdanlar" width="300" height="200">
                         </div>
                         <div class="category__content">
-                            <h3>Carteiras</h3>
-                            <p>Carteiras sofisticadas com acabamento premium</p>
-                            <span class="category__link">Ver coleção</span>
+                            <h3>Cüzdanlar</h3>
+                            <p>Premium bitişli sofistike cüzdanlar</p>
+                            <span class="category__link">Koleksiyonu Gör</span>
                         </div>
                     </a>
-                    <a href="#acessorios" class="category">
+                    <a href="#aksesuarlar" class="category">
                         <div class="category__image">
-                            <img src="img/accessories.jpg" alt="Acessórios em couro" width="300" height="200">
+                            <img src="img/accessories.jpg" alt="Deri aksesuarlar" width="300" height="200">
                         </div>
                         <div class="category__content">
-                            <h3>Acessórios</h3>
-                            <p>Complementos elegantes para seu estilo único</p>
-                            <span class="category__link">Ver coleção</span>
+                            <h3>Aksesuarlar</h3>
+                            <p>Benzersiz stiliniz için şık tamamlayıcılar</p>
+                            <span class="category__link">Koleksiyonu Gör</span>
                         </div>
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="bolsas" class="products-section">
+        <section id="cantalar" class="products-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Bolsas</h2>
-                    <p>Cada bolsa é uma obra de arte única, feita à mão com materiais premium</p>
+                    <h2>Çantalar</h2>
+                    <p>Her çanta premium malzemelerle elle yapılmış benzersiz bir sanat eseridir</p>
                 </div>
                 <div class="products__grid">
                     <article class="product">
                         <div class="product__image">
-                            <img src="img/bolsa1.jpg" alt="Bolsa Tote em couro marrom" width="300" height="300">
+                            <img src="img/bolsa1.jpg" alt="Kahverengi deri Tote çanta" width="300" height="300">
                             <div class="product__overlay">
-                                <span class="product__tag">Bestseller</span>
+                                <span class="product__tag">En Çok Satan</span>
                             </div>
                         </div>
                         <div class="product__content">
-                            <h3>Bolsa Tote Clássica</h3>
-                            <p>Couro genuíno com acabamento artesanal</p>
+                            <h3>Klasik Tote Çanta</h3>
+                            <p>El işçiliği bitişli hakiki deri</p>
                             <ul class="product__features">
-                                <li>Couro premium</li>
-                                <li>Alça ajustável</li>
-                                <li>Compartimentos internos</li>
+                                <li>Premium deri</li>
+                                <li>Ayarlanabilir askı</li>
+                                <li>İç bölmeler</li>
                             </ul>
-                            <a href="contact.html" class="btn">Solicitar Informações</a>
+                            <a href="contact.html" class="btn">Bilgi Al</a>
                         </div>
                     </article>
                     <article class="product">
                         <div class="product__image">
-                            <img src="img/bolsa2.jpg" alt="Bolsa Crossbody em couro preto" width="300" height="300">
+                            <img src="img/bolsa2.jpg" alt="Siyah deri Crossbody çanta" width="300" height="300">
                             <div class="product__overlay">
-                                <span class="product__tag">Novo</span>
+                                <span class="product__tag">Yeni</span>
                             </div>
                         </div>
                         <div class="product__content">
-                            <h3>Bolsa Crossbody</h3>
-                            <p>Design moderno e prático para o dia a dia</p>
+                            <h3>Crossbody Çanta</h3>
+                            <p>Günlük kullanım için modern ve pratik tasarım</p>
                             <ul class="product__features">
-                                <li>Leve e compacta</li>
-                                <li>Fecho magnético</li>
-                                <li>Bolso externo</li>
+                                <li>Hafif ve kompakt</li>
+                                <li>Manyetik kapama</li>
+                                <li>Dış cep</li>
                             </ul>
-                            <a href="contact.html" class="btn">Solicitar Informações</a>
+                            <a href="contact.html" class="btn">Bilgi Al</a>
                         </div>
                     </article>
                     <article class="product">
                         <div class="product__image">
-                            <img src="img/bolsa3.jpg" alt="Bolsa Hobo em couro caramelo" width="300" height="300">
+                            <img src="img/bolsa3.jpg" alt="Karamel rengi deri Hobo çanta" width="300" height="300">
                             <div class="product__overlay">
-                                <span class="product__tag">Exclusivo</span>
+                                <span class="product__tag">Özel</span>
                             </div>
                         </div>
                         <div class="product__content">
-                            <h3>Bolsa Hobo</h3>
-                            <p>Estilo casual com toque sofisticado</p>
+                            <h3>Hobo Çanta</h3>
+                            <p>Sofistike dokunuşlu günlük stil</p>
                             <ul class="product__features">
-                                <li>Design versátil</li>
-                                <li>Acabamento premium</li>
-                                <li>Espaçosa e leve</li>
+                                <li>Çok yönlü tasarım</li>
+                                <li>Premium bitirme</li>
+                                <li>Geniş ve hafif</li>
                             </ul>
-                            <a href="contact.html" class="btn">Solicitar Informações</a>
+                            <a href="contact.html" class="btn">Bilgi Al</a>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="carteiras" class="products-section">
+        <section id="cuzdanlar" class="products-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Carteiras</h2>
-                    <p>Elegância e funcionalidade em cada detalhe artesanal</p>
+                    <h2>Cüzdanlar</h2>
+                    <p>Her el işçiliği detayında zarafet ve işlevsellik</p>
                 </div>
                 <div class="products__grid">
                     <article class="product">
                         <div class="product__image">
-                            <img src="img/wallet1.jpg" alt="Carteira bifold em couro marrom" width="300" height="300">
+                            <img src="img/wallet1.jpg" alt="Kahverengi deri bifold cüzdan" width="300" height="300">
                             <div class="product__overlay">
-                                <span class="product__tag">Bestseller</span>
+                                <span class="product__tag">En Çok Satan</span>
                             </div>
                         </div>
                         <div class="product__content">
-                            <h3>Carteira Bifold</h3>
-                            <p>Design clássico com praticidade moderna</p>
+                            <h3>Bifold Cüzdan</h3>
+                            <p>Modern pratiklikle klasik tasarım</p>
                             <ul class="product__features">
-                                <li>Couro premium selecionado</li>
-                                <li>6 compartimentos para cartões</li>
-                                <li>Porta-documentos</li>
+                                <li>Seçilmiş premium deri</li>
+                                <li>6 kart bölmesi</li>
+                                <li>Evrak bölmesi</li>
                             </ul>
-                            <a href="contact.html" class="btn">Solicitar Informações</a>
+                            <a href="contact.html" class="btn">Bilgi Al</a>
                         </div>
                     </article>
                     <article class="product">
                         <div class="product__image">
-                            <img src="img/wallet2.jpg" alt="Carteira longa feminina em couro caramelo" width="300" height="300">
+                            <img src="img/wallet2.jpg" alt="Karamel rengi deri uzun kadın cüzdanı" width="300" height="300">
                             <div class="product__overlay">
-                                <span class="product__tag">Novo</span>
+                                <span class="product__tag">Yeni</span>
                             </div>
                         </div>
                         <div class="product__content">
-                            <h3>Carteira Longa</h3>
-                            <p>Elegância e organização em um só lugar</p>
+                            <h3>Uzun Cüzdan</h3>
+                            <p>Zarafet ve organizasyon bir arada</p>
                             <ul class="product__features">
-                                <li>Múltiplos compartimentos</li>
-                                <li>Fechamento com zíper</li>
-                                <li>Porta-moedas integrado</li>
+                                <li>Çoklu bölmeler</li>
+                                <li>Fermuarlı kapama</li>
+                                <li>Entegre bozuk para bölmesi</li>
                             </ul>
-                            <a href="contact.html" class="btn">Solicitar Informações</a>
+                            <a href="contact.html" class="btn">Bilgi Al</a>
                         </div>
                     </article>
                     <article class="product">
                         <div class="product__image">
-                            <img src="img/wallet3.jpg" alt="Porta-cartões minimalista" width="300" height="300">
+                            <img src="img/wallet3.jpg" alt="Minimalist kart cüzdanı" width="300" height="300">
                             <div class="product__overlay">
-                                <span class="product__tag">Exclusivo</span>
+                                <span class="product__tag">Özel</span>
                             </div>
                         </div>
                         <div class="product__content">
-                            <h3>Porta-cartões Slim</h3>
-                            <p>Minimalismo e praticidade para seu dia</p>
+                            <h3>İnce Kart Cüzdanı</h3>
+                            <p>Gününüz için minimalizm ve pratiklik</p>
                             <ul class="product__features">
-                                <li>Design ultra fino</li>
-                                <li>Proteção RFID</li>
-                                <li>Bolso para notas</li>
+                                <li>Ultra ince tasarım</li>
+                                <li>RFID koruması</li>
+                                <li>Para bölmesi</li>
                             </ul>
-                            <a href="contact.html" class="btn">Solicitar Informações</a>
+                            <a href="contact.html" class="btn">Bilgi Al</a>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="acessorios" class="products-section">
+        <section id="aksesuarlar" class="products-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Acessórios</h2>
-                    <p>Complementos exclusivos que adicionam um toque especial ao seu estilo</p>
+                    <h2>Aksesuarlar</h2>
+                    <p>Stilinize özel bir dokunuş katan benzersiz tamamlayıcılar</p>
                 </div>
                 <div class="products__grid">
                     <article class="product">
                         <div class="product__image">
-                            <img src="img/accessory1.jpg" alt="Porta-chaves em couro artesanal" width="300" height="300">
+                            <img src="img/accessory1.jpg" alt="El yapımı deri anahtarlık" width="300" height="300">
                             <div class="product__overlay">
-                                <span class="product__tag">Bestseller</span>
+                                <span class="product__tag">En Çok Satan</span>
                             </div>
                         </div>
                         <div class="product__content">
-                            <h3>Porta-chaves Premium</h3>
-                            <p>Organização e estilo para seu dia a dia</p>
+                            <h3>Premium Anahtarlık</h3>
+                            <p>Günlük yaşamınız için organizasyon ve stil</p>
                             <ul class="product__features">
-                                <li>Couro legítimo</li>
-                                <li>Mosquetão resistente</li>
-                                <li>Design compacto</li>
+                                <li>Hakiki deri</li>
+                                <li>Dayanıklı kanca</li>
+                                <li>Kompakt tasarım</li>
                             </ul>
-                            <a href="contact.html" class="btn">Solicitar Informações</a>
+                            <a href="contact.html" class="btn">Bilgi Al</a>
                         </div>
                     </article>
                     <article class="product">
                         <div class="product__image">
-                            <img src="img/accessory2.jpg" alt="Porta-cartões slim em couro" width="300" height="300">
+                            <img src="img/accessory2.jpg" alt="İnce deri kart cüzdanı" width="300" height="300">
                             <div class="product__overlay">
-                                <span class="product__tag">Novo</span>
+                                <span class="product__tag">Yeni</span>
                             </div>
                         </div>
                         <div class="product__content">
-                            <h3>Porta-cartões Executivo</h3>
-                            <p>Elegância e praticidade em um design minimalista</p>
+                            <h3>İş Kart Cüzdanı</h3>
+                            <p>Minimalist tasarımda zarafet ve pratiklik</p>
                             <ul class="product__features">
-                                <li>Ultra fino</li>
-                                <li>Proteção RFID</li>
-                                <li>Acabamento premium</li>
+                                <li>Ultra ince</li>
+                                <li>RFID koruması</li>
+                                <li>Premium bitirme</li>
                             </ul>
-                            <a href="contact.html" class="btn">Solicitar Informações</a>
+                            <a href="contact.html" class="btn">Bilgi Al</a>
                         </div>
                     </article>
                     <article class="product">
                         <div class="product__image">
-                            <img src="img/accessory3.jpg" alt="Cinto artesanal em couro" width="300" height="300">
+                            <img src="img/accessory3.jpg" alt="El yapımı deri kemer" width="300" height="300">
                             <div class="product__overlay">
-                                <span class="product__tag">Exclusivo</span>
+                                <span class="product__tag">Özel</span>
                             </div>
                         </div>
                         <div class="product__content">
-                            <h3>Cinto Artesanal</h3>
-                            <p>Qualidade e sofisticação em cada detalhe</p>
+                            <h3>El Yapımı Kemer</h3>
+                            <p>Her detayda kalite ve zarafet</p>
                             <ul class="product__features">
-                                <li>Couro selecionado</li>
-                                <li>Fivela premium</li>
-                                <li>Personalização disponível</li>
+                                <li>Seçilmiş deri</li>
+                                <li>Premium toka</li>
+                                <li>Kişiselleştirme mevcut</li>
                             </ul>
-                            <a href="contact.html" class="btn">Solicitar Informações</a>
+                            <a href="contact.html" class="btn">Bilgi Al</a>
                         </div>
                     </article>
                 </div>
@@ -281,21 +285,21 @@
             <div class="container">
                 <div class="custom-order__content">
                     <div class="custom-order__text">
-                        <h2>Pedidos Personalizados</h2>
-                        <p>Transforme suas ideias em peças únicas feitas especialmente para você. Nossa experiência em artesanato em couro permite criar produtos exclusivos que atendem às suas necessidades específicas.</p>
+                        <h2>Özel Siparişler</h2>
+                        <p>Fikirlerinizi sizin için özel olarak tasarlanmış parçalara dönüştürün. Deri işçiliğindeki deneyimimiz, özel ihtiyaçlarınızı karşılayan benzersiz ürünler yaratmamızı sağlıyor.</p>
                         <ul class="custom-order__features">
-                            <li>Escolha de cores e materiais</li>
-                            <li>Dimensões personalizadas</li>
-                            <li>Detalhes exclusivos</li>
-                            <li>Gravação personalizada</li>
+                            <li>Renk ve malzeme seçimi</li>
+                            <li>Özel boyutlar</li>
+                            <li>Özel detaylar</li>
+                            <li>Kişisel gravür</li>
                         </ul>
                         <a href="contact.html" class="btn">
-                            <img src="img/icons/bag.svg" alt="" width="24" height="24">
-                            Faça seu Pedido Personalizado
+                            <img src="img/icons/bag.svg" alt="Icon" width="24" height="24">
+                            Özel Sipariş Ver
                         </a>
                     </div>
                     <div class="custom-order__image">
-                        <img src="img/custom-order.jpg" alt="Processo de personalização de bolsas" width="500" height="400">
+                        <img src="img/custom-order.jpg" alt="Çanta kişiselleştirme süreci" width="500" height="400">
                     </div>
                 </div>
             </div>
@@ -303,50 +307,50 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer__grid">
-                <div class="footer__info">
-                    <img src="img/logo-white.svg" alt="ArtesanaBags" class="footer__logo" width="180" height="40">
-                    <p>Criamos bolsas e acessórios artesanais únicos, combinando tradição e inovação em cada peça.</p>
-                </div>
-                <nav class="footer__nav">
-                    <h4>Navegação</h4>
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="products.html">Produtos</a></li>
-                        <li><a href="about.html">Sobre</a></li>
-                        <li><a href="contact.html">Contato</a></li>
-                    </ul>
-                </nav>
-                <div class="footer__contact">
-                    <h4>Contato</h4>
-                    <ul>
-                        <li>
-                            <img src="img/icons/location.svg" alt="" width="24" height="24">
-                            <a href="https://maps.app.goo.gl/M18SwfhKeHUBPV9j9" target="_blank">
-															R. Conselheiro Ramalho, 76 - Bela Vista, São Paulo - SP, Brazil
-                            </a>
-                        </li>
-                        <li>
-                            <img src="img/icons/phone.svg" alt="" width="24" height="24">
-                            <a href="tel:+5511987654321">+55 (11) 98765-4321</a>
-                        </li>
-                        <li>
-                            <img src="img/icons/email.svg" alt="" width="24" height="24">
-                            <a href="mailto:contato@artesanabags.com.br">contato@artesanabags.com.br</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <p>&copy; 2024 ArtesanaBags. Todos os direitos reservados.</p>
-                <div class="footer__legal">
-                    <a href="privacy-policy.html">Política de Privacidade</a>
-                    <a href="terms-conditions.html">Termos de Uso</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+			<div class="container">
+					<div class="footer__grid">
+							<div class="footer__info">
+									<img src="img/logo-white.svg" alt="ArtesanaBags" class="footer__logo" width="180" height="40">
+									<p>Her parçada gelenek ve yeniliği birleştirerek benzersiz el yapımı çanta ve aksesuarlar üretiyoruz.</p>
+							</div>
+							<nav class="footer__nav">
+									<h4>Menü</h4>
+									<ul>
+											<li><a href="index.html">Ana Sayfa</a></li>
+											<li><a href="products.html">Ürünler</a></li>
+											<li><a href="about.html">Hakkımızda</a></li>
+											<li><a href="team.html">Ekibimiz</a></li>
+											<li><a href="contact.html">İletişim</a></li>
+									</ul>
+							</nav>
+							<div class="footer__contact">
+									<h4>İletişim</h4>
+									<ul>
+											<li>
+													<img src="img/icons/location.svg" alt="Icon" width="24" height="24">
+													<a href="https://maps.app.goo.gl/a2U1R3RyHu4V6YEE8" target="_blank">Bulgurlu, Karlıdere Cd. No:44, 34696 Üsküdar/İstanbul, Türkiye</a>
+												</li>
+											<li>
+													<img src="img/icons/phone.svg" alt="Icon" width="24" height="24">
+																										<a href="tel:+902163574182">+90 (216) 357-4182</a>
+
+											</li>
+											<li>
+													<img src="img/icons/email.svg" alt="Icon" width="24" height="24">
+													<a href="mailto:info@artesanabags.com">info@artesanabags.com</a>
+											</li>
+									</ul>
+							</div>
+					</div>
+					<div class="footer__bottom">
+							<p>&copy; 2024 ArtesanaBags. Tüm hakları saklıdır.</p>
+							<div class="footer__legal">
+									<a href="privacy-policy.html">Gizlilik Politikası</a>
+									<a href="terms-conditions.html">Kullanım Koşulları</a>
+							</div>
+					</div>
+			</div>
+	</footer>
 
     <script src="js/main.js"></script>
 </body>

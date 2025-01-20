@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekibimiz - ArtesanaBags</title>
+    <meta name="description" content="ArtesanaBags'in yetenekli zanaatkarları ve tasarımcıları ile tanışın. Her bir çantamızı özenle üreten ekibimizi keşfedin.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="ArtesanaBags" width="180" height="40">
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Ana Sayfa</a></li>
+                    <li><a href="products.html" class="nav__link">Ürünler</a></li>
+                    <li><a href="about.html" class="nav__link">Hakkımızda</a></li>
+                    <li><a href="team.html" class="nav__link nav__link--active">Ekibimiz</a></li>
+                </ul>
+                <a href="contact.html" class="nav__contact">
+                    <img src="img/icons/bag.svg" alt="Icon" width="24" height="24">
+                    Sipariş Ver
+                </a>
+            </nav>
+            <button class="burger" aria-label="Menü">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero--team">
+            <div class="container">
+                <div class="hero__content">
+                    <h1>Ekibimiz</h1>
+                    <p>Gelenek ve yeniliği birleştirerek, her bir çantayı özenle üreten usta zanaatkarlarımızla tanışın</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-stats">
+            <div class="container">
+                <div class="team-hero__stats">
+                    <div class="team-stat">
+                        <span class="team-stat__number" data-number="15">15</span>
+                        <span class="team-stat__label">Yıllık Deneyim</span>
+                    </div>
+                    <div class="team-stat">
+                        <span class="team-stat__number" data-number="1000">1000</span>
+                        <span class="team-stat__label">Üretilen Çanta</span>
+                    </div>
+                    <div class="team-stat">
+                        <span class="team-stat__number" data-number="100">100</span>
+                        <span class="team-stat__label">El Yapımı</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-members">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Usta Ekibimiz</h2>
+                    <p>Her biri alanında uzman, tutkulu ve yaratıcı ekip üyelerimiz</p>
+                </div>
+                
+                <div class="team-filters">
+                    <button class="team-filter active" data-filter="all">Tümü</button>
+                    <button class="team-filter" data-filter="artesao">Zanaatkarlar</button>
+                    <button class="team-filter" data-filter="design">Tasarımcılar</button>
+                    <button class="team-filter" data-filter="admin">Yönetim</button>
+                </div>
+
+                <div class="team-grid">
+                    <article class="team-member" data-category="design">
+                        <div class="team-member__image">
+                            <img src="img/ayse.jpg" alt="Ayşe Yılmaz">
+                        </div>
+                        <div class="team-member__info">
+                            <h3>Ayşe Yılmaz</h3>
+                            <p class="team-member__role">Tasarım Direktörü</p>
+                            <p class="team-member__description">15 yıllık deneyimiyle, koleksiyonlarımızın yaratıcı vizyonunu şekillendiriyor.</p>
+                            <ul class="team-member__skills">
+                                <li>Ürün Tasarımı</li>
+                                <li>Koleksiyon Yönetimi</li>
+                                <li>Trend Analizi</li>
+                            </ul>
+                            <button class="team-member__more">Daha Fazla</button>
+                        </div>
+                    </article>
+
+                    <article class="team-member" data-category="artesao">
+                        <div class="team-member__image">
+                            <img src="img/mehmet.jpg" alt="Mehmet Demir">
+                        </div>
+                        <div class="team-member__info">
+                            <h3>Mehmet Demir</h3>
+                            <p class="team-member__role">Deri Ustası</p>
+                            <p class="team-member__description">20 yıllık deri işçiliği tecrübesiyle, en kaliteli ürünleri ortaya çıkarıyor.</p>
+                            <ul class="team-member__skills">
+                                <li>Deri İşçiliği</li>
+                                <li>El Dikişi</li>
+                                <li>Kalite Kontrol</li>
+                            </ul>
+                            <button class="team-member__more">Daha Fazla</button>
+                        </div>
+                    </article>
+
+                    <article class="team-member" data-category="artesao">
+                        <div class="team-member__image">
+                            <img src="img/zeynep.jpg" alt="Zeynep Kaya">
+                        </div>
+                        <div class="team-member__info">
+                            <h3>Zeynep Kaya</h3>
+                            <p class="team-member__role">Bitirme Uzmanı</p>
+                            <p class="team-member__description">Detaylara olan tutkusu ile her ürüne mükemmel son dokunuşları yapıyor.</p>
+                            <ul class="team-member__skills">
+                                <li>İnce İşçilik</li>
+                                <li>Deri Boyama</li>
+                                <li>Süsleme</li>
+                            </ul>
+                            <button class="team-member__more">Daha Fazla</button>
+                        </div>
+                    </article>
+
+                    <article class="team-member" data-category="admin">
+                        <div class="team-member__image">
+                            <img src="img/elif.jpg" alt="Elif Yılmaz">
+                        </div>
+                        <div class="team-member__info">
+                            <h3>Elif Yılmaz</h3>
+                            <p class="team-member__role">Müşteri İlişkileri Müdürü</p>
+                            <p class="team-member__description">Müşterilerimizle güçlü ilişkiler kurarak, onların ihtiyaçlarını en iyi şekilde anlıyor ve karşılıyor.</p>
+                            <ul class="team-member__skills">
+                                <li>Müşteri İlişkileri</li>
+                                <li>Satış Danışmanlığı</li>
+                                <li>İletişim</li>
+                            </ul>
+                            <button class="team-member__more">Daha Fazla</button>
+                        </div>
+                    </article>
+
+                    <article class="team-member" data-category="design">
+                        <div class="team-member__image">
+                            <img src="img/kemal.jpg" alt="Kemal Demir">
+                        </div>
+                        <div class="team-member__info">
+                            <h3>Kemal Demir</h3>
+                            <p class="team-member__role">Ürün Geliştirme Uzmanı</p>
+                            <p class="team-member__description">Yeni ürün konseptleri geliştirerek ve mevcut tasarımları iyileştirerek koleksiyonumuzu zenginleştiriyor.</p>
+                            <ul class="team-member__skills">
+                                <li>Ürün Tasarımı</li>
+                                <li>Prototip Geliştirme</li>
+                                <li>İnovasyon</li>
+                            </ul>
+                            <button class="team-member__more">Daha Fazla</button>
+                        </div>
+                    </article>
+
+                    <article class="team-member" data-category="admin">
+                        <div class="team-member__image">
+                            <img src="img/can.jpg" alt="Can Yıldırım">
+                        </div>
+                        <div class="team-member__info">
+                            <h3>Can Yıldırım</h3>
+                            <p class="team-member__role">Operasyon Müdürü</p>
+                            <p class="team-member__description">Üretim süreçlerini optimize ederek ve tedarik zincirini yöneterek işletmenin verimliliğini artırıyor.</p>
+                            <ul class="team-member__skills">
+                                <li>Operasyon Yönetimi</li>
+                                <li>Tedarik Zinciri</li>
+                                <li>Süreç Optimizasyonu</li>
+                            </ul>
+                            <button class="team-member__more">Daha Fazla</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="achievements">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Başarılarımız</h2>
+                    <p>Ekibimizin tutkusu ve özverisiyle elde ettiğimiz başarılar</p>
+                </div>
+                <div class="achievements__grid">
+                    <div class="achievement">
+                        <div class="achievement__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="7"/>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                            </svg>
+                        </div>
+                        <h3>El Sanatları Mükemmellik Ödülü</h3>
+                        <p>2023 yılında Türkiye'nin en prestijli el sanatları yarışmasında birincilik ödülü</p>
+                    </div>
+                    <div class="achievement">
+                        <div class="achievement__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21.2 15c.7-1.2 1-2.5.7-3.9-.6-2-2.4-3.5-4.4-3.5h-1.2c-.7-3-3.2-5.2-6.2-5.6-3-.3-5.9 1.3-7.3 4-1.2 2.5-1 5.5.5 7.9 1.4 2.2 3.8 3.6 6.3 3.6h10.3c1.1 0 2.1-.7 2.4-1.7"/>
+                                <path d="M12 8v4l3 3"/>
+                            </svg>
+                        </div>
+                        <h3>Kalite Sertifikasyonu</h3>
+                        <p>ISO 9001:2015 kalite yönetim sistemi sertifikası ile tescillenmiş üretim standartları</p>
+                    </div>
+                    <div class="achievement">
+                        <div class="achievement__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 3c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 18.523 2 13 6.477 3 12 3z"/>
+                                <path d="M12 3v10l6.5-5"/>
+                            </svg>
+                        </div>
+                        <h3>Sürdürülebilirlik Liderliği</h3>
+                        <p>Çevre dostu üretim uygulamalarıyla sektörde örnek gösterilen marka</p>
+                    </div>
+                    <div class="achievement">
+                        <div class="achievement__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 12h6"/>
+                                <path d="M22 12h-6"/>
+                                <path d="M12 2v6"/>
+                                <path d="M12 22v-6"/>
+                                <path d="M17 3l-3.5 3.5"/>
+                                <path d="M3 17l3.5-3.5"/>
+                                <path d="M21 7l-3.5 3.5"/>
+                                <path d="M7 21l3.5-3.5"/>
+                            </svg>
+                        </div>
+                        <h3>İnovasyon Başarısı</h3>
+                        <p>Geleneksel teknikleri modern teknolojiyle birleştiren yenilikçi yaklaşımlar</p>
+                    </div>
+                </div>
+                <div class="achievements__gallery">
+                    <div class="achievements__image">
+                        <img src="img/award.jpg" alt="Ödül töreni">
+                        <div class="achievements__overlay">
+                            <p>2023 El Sanatları Ödül Töreni</p>
+                        </div>
+                    </div>
+                    <div class="achievements__image">
+                        <img src="img/exhibition.jpg" alt="Uluslararası sergi">
+                        <div class="achievements__overlay">
+                            <p>Uluslararası Deri ve Moda Fuarı</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-values">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Değerlerimiz</h2>
+                    <p>Ekibimizi ve işimizi yönlendiren temel prensipler</p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
+                        <h3>Mükemmellik</h3>
+                        <p>Her detayda en iyisini hedefleyerek, kusursuz ürünler ortaya çıkarıyoruz.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2v4"/>
+                                <path d="M12 18v4"/>
+                                <path d="m4.93 4.93 2.83 2.83"/>
+                                <path d="m16.24 16.24 2.83 2.83"/>
+                                <path d="M2 12h4"/>
+                                <path d="M18 12h4"/>
+                                <path d="m16.24 7.76 2.83-2.83"/>
+                                <path d="m4.93 19.07 2.83-2.83"/>
+                            </svg>
+                        </div>
+                        <h3>Yenilikçilik</h3>
+                        <p>Geleneksel teknikleri modern tasarımlarla birleştirerek geleceğe taşıyoruz.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 3c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 18.523 2 13 6.477 3 12 3z"/>
+                                <path d="M12 3v10"/>
+                                <path d="M12 13h10"/>
+                            </svg>
+                        </div>
+                        <h3>Sürdürülebilirlik</h3>
+                        <p>Çevreye saygılı üretim yöntemleri ve malzemeler kullanıyoruz.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>İşbirliği</h3>
+                        <p>Ekip ruhuyla çalışarak en iyi sonuçları elde ediyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="join-team">
+            <div class="container">
+                <div class="join-team__content">
+                    <h2>Ekibimize Katılın</h2>
+                    <p>El sanatlarına tutkulu, yaratıcı ve yenilikçi profesyoneller arıyoruz. Değerlerimizi paylaşıyor ve bu hikayenin bir parçası olmak istiyorsanız, sizinle tanışmak isteriz.</p>
+                    <div class="join-team__buttons">
+                        <a href="contact.html" class="btn">İletişime Geçin</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+			<div class="container">
+					<div class="footer__grid">
+							<div class="footer__info">
+									<img src="img/logo-white.svg" alt="ArtesanaBags" class="footer__logo" width="180" height="40">
+									<p>Her parçada gelenek ve yeniliği birleştirerek benzersiz el yapımı çanta ve aksesuarlar üretiyoruz.</p>
+							</div>
+							<nav class="footer__nav">
+									<h4>Menü</h4>
+									<ul>
+											<li><a href="index.html">Ana Sayfa</a></li>
+											<li><a href="products.html">Ürünler</a></li>
+											<li><a href="about.html">Hakkımızda</a></li>
+											<li><a href="team.html">Ekibimiz</a></li>
+											<li><a href="contact.html">İletişim</a></li>
+									</ul>
+							</nav>
+							<div class="footer__contact">
+									<h4>İletişim</h4>
+									<ul>
+											<li>
+													<img src="img/icons/location.svg" alt="Icon" width="24" height="24">
+													<a href="https://maps.app.goo.gl/a2U1R3RyHu4V6YEE8" target="_blank">Bulgurlu, Karlıdere Cd. No:44, 34696 Üsküdar/İstanbul, Türkiye</a>
+												</li>
+											<li>
+													<img src="img/icons/phone.svg" alt="Icon" width="24" height="24">
+														<a href="tel:+902163574182">+90 (216) 357-4182</a>
+											</li>
+											<li>
+													<img src="img/icons/email.svg" alt="Icon" width="24" height="24">
+													<a href="mailto:info@artesanabags.com">info@artesanabags.com</a>
+											</li>
+									</ul>
+							</div>
+					</div>
+					<div class="footer__bottom">
+							<p>&copy; 2024 ArtesanaBags. Tüm hakları saklıdır.</p>
+							<div class="footer__legal">
+									<a href="privacy-policy.html">Gizlilik Politikası</a>
+									<a href="terms-conditions.html">Kullanım Koşulları</a>
+							</div>
+					</div>
+			</div>
+	</footer>
+
+    <div class="team-modal">
+        <div class="team-modal__content">
+            <button class="team-modal__close">&times;</button>
+            <div class="team-modal__image">
+                <img src="" alt="Modal">
+            </div>
+            <div class="team-modal__info">
+                <h3></h3>
+                <p class="team-modal__role"></p>
+                <div class="team-modal__description"></div>
+                <div class="team-modal__skills">
+                    <h4>Uzmanlık Alanları</h4>
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
